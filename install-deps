@@ -18,11 +18,11 @@ if [[ `uname` == 'Darwin' ]]; then
     fi
 
     # Install dependencies:
-    brew install git readline cmake wget qt
-    brew install libjpeg imagemagick zeromq 
-    brew link readline --force
-    brew remove gnuplot
-    brew install gnuplot --wx --cairo --pdf --with-x
+    sudo port install git readline cmake wget qt
+    sudo port install libjpeg imagemagick zeromq 
+    sudo port link readline --force
+    sudo port remove gnuplot
+    sudo port install gnuplot --wx --cairo --pdf --with-x
 
 elif [[ `uname` == 'Linux' ]]; then
     # Aptitude?
